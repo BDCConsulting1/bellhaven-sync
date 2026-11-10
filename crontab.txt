@@ -1,0 +1,3 @@
+# Run the sync every day at 6:15 AM local time. Proposals queue up for review;
+# nothing is written to the CRM without approval in the review app.
+15 6 * * * cd $HOME/bellhaven-sync && .venv/bin/python sync.py >> data/sync.log 2>&1
